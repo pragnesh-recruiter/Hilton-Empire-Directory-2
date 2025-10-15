@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo, useRef } from "react";
 
-const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0S7IpjAxgWRyiuVcX7fVGJr9XvhAjx5XgHhwcYiDn7QrEndKSq7m8vAjF3WJSq0PfhXoK3oLufnkD/pub?output=csv";
+const SHEET_CSV_URL = "https://cors-anywhere.herokuapp.com/https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0S7IpjAxgWRyiuVcX7fVGJr9XvhAjx5XgHhwcYiDn7QrEndKSq7m8vAjF3WJSq0PfhXoK3oLufnkD/pub?output=csv;
 const REFRESH_INTERVAL_MS = 60 * 1000; // refresh every 60 seconds
 const DEFAULT_COUNTRY_CODE = "91";
 
