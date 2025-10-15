@@ -1,15 +1,16 @@
-self.addEventListener("install", e => {
-  e.waitUntil(
-    caches.open("hilton-directory").then(cache => {
-      return cache.addAll(["/", "/index.html"]);
-    })
-  );
-});
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./app";
+import "./style.css";
 
-self.addEventListener("fetch", e => {
-  e.respondWith(
-    caches.match(e.request).then(response => {
-      return response || fetch(e.request);
-    })
-  );
-});
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+
+// Register service worker
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/service-worker.js")
+      .then((reg) => console.log("Service Worker registered", reg))
+      .catch((err) => console.log("Service Worker failed", err));
+  });
+}
