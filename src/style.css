@@ -1,0 +1,35 @@
+body {
+  font-family: "Noto Sans Gujarati", sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  background: #ecfeff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.directory .card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+  color: #0d9488;
+  font-weight: bold;
+}
