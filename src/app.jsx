@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const SHEET_CSV_URL = "PASTE_YOUR_PUBLISHED_CSV_URL_HERE"; // replace with your CSV link
+const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0S7IpjAxgWRyiuVcX7fVGJr9XvhAjx5XgHhwcYiDn7QrEndKSq7m8vAjF3WJSq0PfhXoK3oLufnkD/pub?output=csv"; // replace with your CSV link
 
 export default function App() {
   const [rows, setRows] = useState([]);
