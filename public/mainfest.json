@@ -1,11 +1,11 @@
 {
   "name": "Hilton Empire B Wing Directory",
-  "short_name": "Hilton B Wing",
+  "short_name": "Hilton Directory",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0d9488",
-  "description": "Hilton Empire B Wing Residency Directory (Live from Google Sheet)",
+  "theme_color": "#004aad",
+  "description": "Hilton Empire B Wing residency directory with live Google Sheet data.",
   "icons": [
     {
       "src": "/icons/icon-192.png",
@@ -16,6 +16,6 @@
       "src": "/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
-    }
-  ]
+    }
+  ]
 }
